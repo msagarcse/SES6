@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import {data} from '../json/content';
 import '../app.css';
 
@@ -21,8 +21,8 @@ class NavigationSection extends Component {
                 <div className="menu-box ">
                     <div className="menu" onClick={this.toggleMenu}>New ES6 Syntax</div>
                     <ul  className="menu-items list-unstyled">
-                        <li><Link to='/let_const'>let, const and Block Scoping</Link></li>
-                        <li><Link to='/arrow_func'>Arrow Functions</Link></li>
+                        <li><NavLink activeClassName="active" to='/let_const'>let, const and Block Scoping</NavLink></li>
+                        <li><NavLink to='/arrow_func'>Arrow Functions</NavLink></li>
                         <li><a href="">Default Function Parameters</a></li>
                         <li><a href="">Rest and Spread</a></li>
                         <li><a href="">Object Literal Extensions</a></li>

@@ -30,6 +30,7 @@ a,a:focus, a:hover,a:visited {text-decoration: none}
     font-size: 20px;
     background: #F8F8F8; }
   .content-section .question-set-section {
+    margin-bottom: 30px;
      }
     .content-section .question-set-section .question-block {
       margin-top: 10px; }
@@ -39,14 +40,14 @@ a,a:focus, a:hover,a:visited {text-decoration: none}
         border-radius: 0;
         background: none; }
       .content-section .question-set-section .question-block code {
-        padding: 0 0 0 15px;
+        padding: 15px 0 0 15px;
         background-color: #efefef;
         color: #333;
         padding-bottom: 15px; }
     .content-section .question-set-section .answer-section {
       position: relative;
       color: #fff;
-      top: -45px;
+      top: -10px;
       line-height: 30px;
       padding-left: 15px;
       background-color: #171717; }
