@@ -23,7 +23,6 @@ class QuesAnswer extends Component {
           display:'none'
       }
       console.log("content loaded ",this.props.match.params);
-      let ques_ans = data[this.props.match.params.topic];
       console.log("ques_ans ",ques_ans.type);
     return (
       <div>

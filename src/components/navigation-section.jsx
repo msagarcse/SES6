@@ -6,7 +6,15 @@ import '../app.css';
 
 
 class NavigationSection extends Component {
- 
+
+    constructor(props){
+        super(props);
+    }
+    
+    componentDidMount(){
+        console.log(data.es6);
+    }
+
    toggleMenu = (e) =>{
          $(e.target).toggleClass('menu-box-open');
         $(e.target).next().slideToggle('slow').removeClass('open-links');
@@ -18,7 +26,19 @@ class NavigationSection extends Component {
          <div className="logo-text text-center"><Link to='/'><span className="rapid-text">RAPID</span><span className="es6-text">ES6</span></Link></div>
          <div className="tag-line text-center">Your Guide for quick checks</div>
          <div className="row navigation-links-section">
-                <div className="menu-box ">
+            { data.es6 && data.es6.map ( (topics,index) => {
+                return( 
+                    <div className="menu-box " key ={index} >
+                    <div className="menu" onClick={this.toggleMenu}>{topics.menu}</div>
+                        <ul  className="menu-items list-unstyled">
+                        { topics.sub_menu && topics.sub_menu.map( (subTopic,ind)=>{
+                            return( <li key={ind}><NavLink to={`/${Object.keys(subTopic)[1]}`}>{subTopic.sub_menu_name}</NavLink></li>)
+                        })}
+                        </ul>                        
+                    </div>
+                );
+            })}
+               {/* <div className="menu-box ">
                     <div className="menu" onClick={this.toggleMenu}>New ES6 Syntax</div>
                     <ul  className="menu-items list-unstyled">
                         <li><NavLink activeClassName="active" to='/let_const'>let, const and Block Scoping</NavLink></li>
@@ -106,7 +126,7 @@ class NavigationSection extends Component {
                         <li><a href="">A Proxy as a Prototype</a></li>
                         <li><a href="">Revocable Proxies</a></li>
                     </ul>
-                </div>
+                </div>*/}
             </div>
         </div>
     );
