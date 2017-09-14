@@ -23,17 +23,27 @@ class QuesAnswer extends Component {
           display:'none'
       }
       console.log("content loaded ",this.props.match.params);
-      console.log("ques_ans ",ques_ans.type);
+      const topic = this.props.match.params.topic;
+      let questions = [],title = '';
+      data.es6.filter( (topics)=>{
+                topics.sub_menu.map((sub_topic) => {
+                    if( Object.keys(sub_topic)[1] === topic){
+                        questions =  sub_topic[topic];
+                        title=sub_topic.sub_menu_name;
+                    }
+                });
+      });
+      console.log("values ",questions);
     return (
       <div>
-          <div className="topic-header text-center">{ques_ans.title}</div>
-                { ques_ans.type && ques_ans.type.map( (list , index ) => {
+          <div className="topic-header text-center">{title}</div>
+                { questions && questions.map( (list , index ) => {
                     return (
                         <div className="question-set-section" key={index}>  
                             <div className="console-question">{index+1}. What shows in the console ?</div>
                             <div className="question-block">
                                 <Highlight language="javascript">
-                                  { beautify(list.question)}
+                                  { beautify(list.question) }
                                 </Highlight>
                             </div>
                              <div className="answer-section">
