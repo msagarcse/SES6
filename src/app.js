@@ -7,7 +7,6 @@ import MobNavigation from './components/mob-navigation';
 import NavigationSection from './components/navigation-section';
 import ContentSection from './components/content-section';
 import RightInfoSection from './components/right-info-section';
-import { originalFlow } from './json/sampleFlowData.js';
 
 
 class App extends Component {
