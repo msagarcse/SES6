@@ -5,7 +5,7 @@ export const data = {
 				"sub_menu_name": "let, const and Block Scoping",
 				"let_const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
-					"answer": ["undefined"]
+					"answer": ["undefined","1","2","3"]
 				}, {
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]

@@ -49,7 +49,14 @@ class QuesAnswer extends Component {
                              <div className="answer-section">
                                 <div className="show-answer-text" onClick={this.toggleAns}>Show Answer</div>
                             </div>
-                            <div className="show-answer" style={divStyle}>undefined</div>
+                            <div className="show-answer" style={divStyle}>
+                                {list.answer && list.answer.map ( (ans,index) =>{
+                                    return(
+                                        <div key={index}>{ans}</div>
+                                    )
+                                })}
+                                
+                            </div>
                         </div>
                     )
                 }) }
