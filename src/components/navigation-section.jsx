@@ -32,7 +32,7 @@ class NavigationSection extends Component {
                     <div className="menu" onClick={this.toggleMenu}>{topics.menu}</div>
                         <ul  className="menu-items list-unstyled">
                         { topics.sub_menu && topics.sub_menu.map( (subTopic,ind)=>{
-                            return( <li key={ind}><NavLink to={`/${Object.keys(subTopic)[1]}`}>{subTopic.sub_menu_name}</NavLink></li>)
+                            return( <li key={ind}><NavLink  to={`/${Object.keys(subTopic)[1]}`}>{subTopic.sub_menu_name}</NavLink></li>)
                         })}
                         </ul>                        
                     </div>

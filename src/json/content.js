@@ -64,7 +64,7 @@ export const data = {
 	},{
 		"menu": "New Types",
 		"sub_menu": [{
-				"sub_menu_name": "let, const and Block Scoping",
+				"sub_menu_name": "Symbols",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
@@ -74,7 +74,7 @@ export const data = {
 				}]
 			},
 			{
-				"sub_menu_name": "Arrow Functions",
+				"sub_menu_name": "Well-known Symbols",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
@@ -84,7 +84,7 @@ export const data = {
 	},{
 		"menu": "Object Extensions",
 		"sub_menu": [{
-				"sub_menu_name": "let, const and Block Scoping",
+				"sub_menu_name": "Object Extensions",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
@@ -94,7 +94,31 @@ export const data = {
 				}]
 			},
 			{
-				"sub_menu_name": "Arrow Functions",
+				"sub_menu_name": "String Extensions",
+				"let-const": [{
+					"question": "'use strict'; console.log(productId); var productId = 12;",
+					"answer": ["undefined"]
+				}]
+			},{
+				"sub_menu_name": "Number Extensions",
+				"let-const": [{
+					"question": "'use strict'; console.log(productId); var productId = 12;",
+					"answer": ["undefined"]
+				}]
+			},{
+				"sub_menu_name": "Math Extensions",
+				"let-const": [{
+					"question": "'use strict'; console.log(productId); var productId = 12;",
+					"answer": ["undefined"]
+				}]
+			},{
+				"sub_menu_name": "RegExp Extensions",
+				"let-const": [{
+					"question": "'use strict'; console.log(productId); var productId = 12;",
+					"answer": ["undefined"]
+				}]
+			},{
+				"sub_menu_name": "Function Extensions",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
@@ -104,115 +128,193 @@ export const data = {
 	}, {
 		"menu": "ES6 Modules and Classes",
 		"sub_menu": [{
-				"sub_menu_name": "Symbols",
+				"sub_menu_name": "Module Basics",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
 				}]
 			},
 			{
-				"sub_menu": [{
-					"sub_menu_name": "Well-known Symbols",
+					"sub_menu_name": "Named Exports",
 					"let-const": [{
 						"question": "'use strict'; console.log(productId); var productId = 12;",
 						"answer": ["undefined"]
 					}]
-				}]
+			},{
+					"sub_menu_name": "Classes",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "extends and super",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "Constructor Function",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "Static Members",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "new.target",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
 			}
 		]
 	},{
 		"menu": "Iterators, Generators",
 		"sub_menu": [{
-				"sub_menu_name": "Symbols",
+				"sub_menu_name": "Iterators",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
 				}]
 			},
 			{
-				"sub_menu": [{
-					"sub_menu_name": "Well-known Symbols",
+					"sub_menu_name": "Generators",
 					"let-const": [{
 						"question": "'use strict'; console.log(productId); var productId = 12;",
 						"answer": ["undefined"]
 					}]
-				}]
+			},{
+					"sub_menu_name": "Yielding in Generators",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "throw and return",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
 			}
 		]
 	},{
 		"menu": "Arrays and Collections",
 		"sub_menu": [{
-				"sub_menu_name": "Symbols",
+				"sub_menu_name": "Array Extensions",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
 				}]
 			},
 			{
-				"sub_menu": [{
-					"sub_menu_name": "Well-known Symbols",
+					"sub_menu_name": "ArrayBuffer and Typed Array",
 					"let-const": [{
 						"question": "'use strict'; console.log(productId); var productId = 12;",
 						"answer": ["undefined"]
 					}]
-				}]
+			},{
+					"sub_menu_name": "DataView and Endianness",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "Map and WeakMap",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "Set and WeakSet",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "Subclassing",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
 			}
 		]
 	},{
 		"menu": "Promises",
 		"sub_menu": [{
-				"sub_menu_name": "Symbols",
+				"sub_menu_name": "Promises",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
 				}]
 			},
 			{
-				"sub_menu": [{
-					"sub_menu_name": "Well-known Symbols",
+					"sub_menu_name": "More Promise Features",
 					"let-const": [{
 						"question": "'use strict'; console.log(productId); var productId = 12;",
 						"answer": ["undefined"]
 					}]
-				}]
 			}
 		]
 	},{
 		"menu": "The Reflect API",
 		"sub_menu": [{
-				"sub_menu_name": "Symbols",
+				"sub_menu_name": "Construction and Method Calls",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
 				}]
 			},
 			{
-				"sub_menu": [{
-					"sub_menu_name": "Well-known Symbols",
+					"sub_menu_name": "Reflect and Prototypes",
 					"let-const": [{
 						"question": "'use strict'; console.log(productId); var productId = 12;",
 						"answer": ["undefined"]
 					}]
-				}]
+			},{
+					"sub_menu_name": "Reflect and Properties",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "Reflect and Property Extensions",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
 			}
 		]
 	},{
 		"menu": "The Proxy API",
 		"sub_menu": [{
-				"sub_menu_name": "Symbols",
+				"sub_menu_name": "Get by Proxy",
 				"let-const": [{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
 				}]
 			},
 			{
-				"sub_menu": [{
-					"sub_menu_name": "Well-known Symbols",
+					"sub_menu_name": "Calling Functions by Proxy",
 					"let-const": [{
 						"question": "'use strict'; console.log(productId); var productId = 12;",
 						"answer": ["undefined"]
 					}]
-				}]
+			},{
+					"sub_menu_name": "A Proxy as a Prototype",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
+			},{
+					"sub_menu_name": "Revocable Proxies",
+					"let-const": [{
+						"question": "'use strict'; console.log(productId); var productId = 12;",
+						"answer": ["undefined"]
+					}]
 			}
 		]
 	}]

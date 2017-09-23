@@ -7,6 +7,7 @@ import MobNavigation from './components/mob-navigation';
 import NavigationSection from './components/navigation-section';
 import ContentSection from './components/content-section';
 import RightInfoSection from './components/right-info-section';
+//import { originalFlow } from './json/sampleFlowData.js';
 
 
 class App extends Component {
@@ -55,7 +56,7 @@ class App extends Component {
           console.log("indexOfOrder1 ",indexOfOrder1);
           this.changeOrder1DataAction(order1Data,currentFirstIndexDataIntializeAction);
           if(indexOfOrder1 !== 0){
-            currentFirstIndexData.progressSubSteps[0].initialisationActions = order1DataInitializeAction;
+            //currentFirstIndexData.progressSubSteps[0].initialisationActions = order1DataInitializeAction;
             this.changeStartNextPage(currentFirstIndexData.progressSubSteps[indexOfOrder1], currentFirstIndexData.progressSubSteps[0]);
           }else{
             currentFirstIndexData.progressSubSteps[0].startPage = 'FLOW_XHTML';
