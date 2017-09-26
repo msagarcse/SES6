@@ -4,9 +4,13 @@ export const data = {
 		"sub_menu": [{
 				"sub_menu_name": "let, const and Block Scoping",
 				"let_const": [{
-					"question": "'use strict'; console.log(productId); var productId = 12;",
-					"answer": ["undefined","1","2","3"]
-				}, {
+					"fileName1":'File base.js:',
+					"question1": "'use strict'; console.log(productId); var productId = 12;",
+					"answer": ["undefined","1","2","3"],
+					"fileName2":'File module1.js:',
+					"question2": "'use strict'; console.log(productId); var productId = 12;",
+				}, {"fileName1":'File base.js:',
+					"question1": "'use strict'; console.log(productId); var productId = 12;",
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
 				}]
@@ -14,6 +18,11 @@ export const data = {
 			{
 				"sub_menu_name": "Arrow Functions",
 				"arrow_func": [{
+					"fileName1":'File base.js:',
+					"question1": "'use strict'; console.log(productId); var productId = 12;",
+					"answer": ["undefined"]
+				},
+				{
 					"question": "'use strict'; console.log(productId); var productId = 12;",
 					"answer": ["undefined"]
 				}]

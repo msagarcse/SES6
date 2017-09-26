@@ -18,7 +18,24 @@ class QuesAnswer extends Component {
         $(e.target).parent().next().slideToggle('slow');
  }
 
+ 
   render() {
+
+      const renderQues = ( quesObj, index) =>{
+         return(<div>
+             <Highlight language="javascript">
+                { 
+                    quesObj.hasOwnProperty('fileName1') && <div><i><u>{quesObj.fileName1}</u></i><br/><br/>
+                        { beautify(quesObj.question1) }</div> 
+                }
+                { 
+                    quesObj.hasOwnProperty('fileName2') && <div><i><u>{quesObj.fileName2}</u></i><br/><br/>
+                        { beautify(quesObj.question2) }</div>         
+                }
+                 { quesObj.hasOwnProperty('question')  &&   beautify(quesObj.question) }
+            </Highlight>
+         </div>)
+      }
       const divStyle={
           display:'none'
       }
@@ -42,9 +59,7 @@ class QuesAnswer extends Component {
                         <div className="question-set-section" key={index}>  
                             <div className="console-question">{index+1}. What shows in the console ?</div>
                             <div className="question-block">
-                                <Highlight language="javascript">
-                                  { beautify(list.question) }
-                                </Highlight>
+                                    {renderQues(list,index)}
                             </div>
                              <div className="answer-section">
                                 <div className="show-answer-text" onClick={this.toggleAns}>Show Answer</div>
