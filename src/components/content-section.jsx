@@ -13,7 +13,7 @@ class ContentSection extends Component {
     return (
     <Switch>
       <Route exact path='/' component={HomePageContent}/>
-      <Route exact path='/:topic' component={QuesAnswer}/>
+      <Route exact path='/es6/:topic' component={QuesAnswer}/>
     </Switch>
     );
   }

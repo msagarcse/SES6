@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import beautify  from 'js-beautify';
 import $ from 'jquery';
 import Highlight from 'react-highlight';
 import '../../node_modules/highlight.js/styles/tomorrow-night-eighties.css';
 import '../app.css';
 import {data} from '../json/content';
+import FileImpExp from './file-impexp.jsx';
 
 
 class QuesAnswer extends Component {
  constructor(props){
      super(props);
+     this.state = {load:false};
      }
  
  toggleAns= (e) => {
@@ -18,28 +21,11 @@ class QuesAnswer extends Component {
         $(e.target).parent().next().slideToggle('slow');
  }
 
- 
-  render() {
 
-      const renderQues = ( quesObj, index) =>{
-         return(<div>
-             <Highlight language="javascript">
-                { 
-                    quesObj.hasOwnProperty('fileName1') && <div><i><u>{quesObj.fileName1}</u></i><br/><br/>
-                        { beautify(quesObj.question1) }</div> 
-                }
-                { 
-                    quesObj.hasOwnProperty('fileName2') && <div><i><u>{quesObj.fileName2}</u></i><br/><br/>
-                        { beautify(quesObj.question2) }</div>         
-                }
-                 { quesObj.hasOwnProperty('question')  &&   beautify(quesObj.question) }
-            </Highlight>
-         </div>)
-      }
+  render() {
       const divStyle={
           display:'none'
       }
-      console.log("content loaded ",this.props.match.params);
       const topic = this.props.match.params.topic;
       let questions = [],title = '';
       data.es6.filter( (topics)=>{
@@ -50,7 +36,6 @@ class QuesAnswer extends Component {
                     }
                 });
       });
-      console.log("values ",questions);
     return (
       <div>
           <div className="topic-header text-center">{title}</div>
@@ -59,7 +44,15 @@ class QuesAnswer extends Component {
                         <div className="question-set-section" key={index}>  
                             <div className="console-question">{index+1}. What shows in the console ?</div>
                             <div className="question-block">
-                                    {renderQues(list,index)}
+                                { list.fileName  &&  list.fileName.map(( r,i) =>{
+                                    return(<div key={i}><Highlight language="javascript">
+                                         <u>{r.name}</u><br/><br/>
+                                        <div>{beautify(r.question)}</div>
+                                    </Highlight></div>)
+                                })}
+                                { list.question && <div><Highlight language="javascript">
+                                  { beautify(list.question) }
+                                </Highlight></div>}
                             </div>
                              <div className="answer-section">
                                 <div className="show-answer-text" onClick={this.toggleAns}>Show Answer</div>
