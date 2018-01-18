@@ -363,3 +363,51 @@ a:visited {
     padding-left: 38px;
   }
 }
+
+.sc-navbar-padding{
+  padding-top: 5%;
+}
+.sc-span1-style{
+  font-weight: bolder;
+  font-size: large;
+}
+.sc-span2-style{
+  font-weight: bolder;
+  font-size: large;
+  color: #72C7DB;
+}
+
+.sc-heading-tag{
+    padding-top: 25%;
+    text-align: center;
+    color: #554B6F;
+}
+
+.sc-heading-info-heading{
+  font-size: 24px;
+  letter-spacing: 4.1px;
+  border-bottom: solid 2px #72C7DB;
+}
+
+.sc-heading-info-subtext{
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.box{
+  height: 200px;
+    width: 100%;
+    border: 1px solid black;
+    background: #fff; 
+}
+.sc-header-container{
+  padding-bottom: 15%;
+}
+
+.sc-course-container{
+  background:  #EFEFEF
+}
+
+.sc-course-layout{
+  padding-top: 10%;
+}

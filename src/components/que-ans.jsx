@@ -21,8 +21,20 @@ class QuesAnswer extends Component {
         $(e.target).parent().next().slideToggle('slow');
  }
 
+ componentDidMount = () => {
+     ReactDOM.findDOMNode(this).getElementsByClassName('snap')
+     console.log("didMount callled");
+ }
+componentWillMount = () =>{
+    console.log("willMount called");
+}
 
+componentWillReceiveProps = () =>{
+    console.log("componentWillReceiveProps");
+
+}
   render() {
+      console.log("render called");
       const divStyle={
           display:'none'
       }
@@ -57,14 +69,13 @@ class QuesAnswer extends Component {
                              <div className="answer-section">
                                 <div className="show-answer-text" onClick={this.toggleAns}>Show Answer</div>
                             </div>
-                            <div className="show-answer" style={divStyle}>
                                 {list.answer && list.answer.map ( (ans,index) =>{
                                     return(
-                                        <div key={index}>{ans}</div>
+                                        <div className="show-answer"  key={index} style={divStyle}>
+                                            <div>{ans}</div>
+                                        </div>
                                     )
                                 })}
-                                
-                            </div>
                         </div>
                     )
                 }) }

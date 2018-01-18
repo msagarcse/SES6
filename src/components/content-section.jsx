@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch,Route } from 'react-router-dom';
+import { Switch,Route,BrowserRouter } from 'react-router-dom';
 import HomePageContent from './homepage-content';
 import QuesAnswer from './que-ans';
 import '../app.css';
@@ -11,10 +11,10 @@ class ContentSection extends Component {
  }
   render() {
     return (
-    <Switch>
-      <Route exact path='/' component={HomePageContent}/>
-      <Route exact path='/es6/:topic' component={QuesAnswer}/>
-    </Switch>
+      <Switch>
+        <Route exact path='/es6' component={HomePageContent}/>
+        <Route path='/es6/:topic' component={QuesAnswer}/>
+      </Switch>
     );
   }
 }

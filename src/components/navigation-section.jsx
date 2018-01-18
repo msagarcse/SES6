@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { NavLink,Link } from 'react-router-dom';
 import {data} from '../json/content';
 import '../app.css';
@@ -11,9 +12,9 @@ class NavigationSection extends Component {
         super(props);
     }
     
-    componentDidMount(){
-        console.log(data.es6);
-    }
+  componentDidMount = () => {
+    
+ }
 
    toggleMenu = (e) =>{
          $(e.target).toggleClass('menu-box-open');
