@@ -9,6 +9,10 @@ import ContentSection from './components/content-section';
 import RightInfoSection from './components/right-info-section';
 import NavigationBar from './components/navigation-bar';
 import CourseList from './components/course-list';
+import Footer from './components/footer.jsx';
+import TopicList from './components/topic-list';
+import FeedBack from './components/feedback';
+import Subscribe from './components/subscription';
 //import { originalFlow } from './json/sampleFlowData.js';
 
 
@@ -45,6 +49,10 @@ class App extends Component {
         </div>*/}
         <NavigationBar />
         <CourseList />
+        <TopicList/>
+        <FeedBack/>
+        <Subscribe/>
+        <Footer />
       </div>
     );
   }

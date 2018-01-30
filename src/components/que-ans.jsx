@@ -6,7 +6,7 @@ import Highlight from 'react-highlight';
 import '../../node_modules/highlight.js/styles/tomorrow-night-eighties.css';
 import '../app.css';
 import {data} from '../json/content';
-import FileImpExp from './file-impexp.jsx';
+
 
 
 class QuesAnswer extends Component {

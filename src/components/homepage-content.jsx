@@ -3,7 +3,15 @@ import '../app.css';
 
 
 class HomePageContent extends Component {
- 
+ constructor(props){
+     super(props);
+ }
+
+ componentDidMount(){
+    fetch('/users')
+      .then(res => res.json())
+      .then(users => console.log("users ",users));
+ }
   render() {
     return (
       <div>
