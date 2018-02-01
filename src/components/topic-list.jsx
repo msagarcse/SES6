@@ -65,6 +65,10 @@ class TopicList extends React.Component{
                                     <div className="sc-topic-size">JavaScript Topic 1</div>
                                     <div className="sc-topic-size">JavaScript Topic 1</div>
                                     <div className="sc-topic-size">JavaScript Topic 1</div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-xs-12 sc-topic-btn">
                                     <button className="btn btn-primary btn-sm sc-topic-list-btn">View All</button>
                                 </div>
                             </div>

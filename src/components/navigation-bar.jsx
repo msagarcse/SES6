@@ -16,7 +16,7 @@ class NavigationBar extends Component {
                 <div><span className="sc-span1-style">SCRIPT</span><span className="sc-span2-style">SCHOOL</span></div>
                 <div>Learn Challenge Update</div>
             </div>
-            <div className="col-xs-6">
+            <div className="col-xs-5">
                 <ul className="nav navbar-nav">
                     <li className="active"><a href="#">JS</a></li>
                     <li><a href="#">ES6</a></li>
@@ -25,7 +25,9 @@ class NavigationBar extends Component {
                     <li><a href="#">Algorithms</a></li>
                 </ul>
             </div>
-            <div className="col-xs-3">Serach</div>
+            <div className="col-xs-4">
+                 <input type="text" className="sc-nav-searchbar" placeholder="Search Here" />
+            </div>
         </div>
         </header>
         

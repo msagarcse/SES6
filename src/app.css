@@ -519,7 +519,7 @@ a:visited {
     position: relative;
     top: 65px;
     /*width: 89%;*/
-    margin-left: 5%;
+    /*margin-left: 5%;*/
     /*height: 200px;*/
     background: white;
     z-index:1;
@@ -527,16 +527,16 @@ a:visited {
    
 }
 .sc-feedback-outer-grid{
-   position: absolute;
+   position: relative;
     top: 140px;
     width: 89%;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
     /*height: 200px;*/
     background: white;
     z-index:1;
 
 }
-.sc-feedback-outer-grid > div{
+.sc-feedback-outer-grid > div:nth-child(1){
   padding-top: 8%;
 }
 .sc-inner-grid{
@@ -554,7 +554,7 @@ a:visited {
 }
 .sc-topic-list{
   padding-top: 5%;
-  padding-bottom: 5%;
+  /*padding-bottom: 5%;*/
 }
 .sc-topic-style-odd{
   font-size: 18px;
@@ -583,17 +583,22 @@ a:visited {
   overflow: hidden;
 }
 .sc-topic-list-btn{
-    margin-top: 6%;
-    float: right;
+    
+    /*float: right;*/
     /* color: #FF7676; */
     background: #FF7676;
     border: none;
     /* padding: 9px;*/
 }
+.sc-topic-btn{
+  text-align: right;
+  padding-bottom: 5%;
+  margin-top: 6%;
+}
 .sc-feedback-inner-grid{
       background: #72C7DB;
     height: 750px;
-    position: relative;
+    /*position: relative;*/
 }
 .sc-feedback-text-style1{
     color: #574D71;
@@ -635,4 +640,53 @@ a:visited {
 }
 .sc-subscribe-row{
   margin: 15% 0 15% 0
+}
+.sc-subscribe-text-style{
+  color: #574D71;
+    font-weight: bolder;
+    padding-top: 20%;
+}
+.sc-subscribe-border{
+  border-right: solid 1px #72C7DB;
+}
+
+.sc-subscribe-mail input{
+  /*padding-top: 5%;*/
+  background: #EFEFEF;
+    border: none;
+    height: 40px;
+    padding-left: 10px;
+    width: 50%;
+}
+.sc-subscribe-container{
+  padding-left: 10%;
+}
+.sc-subscribe-mail{
+  padding-top: 10%;
+}
+.sc-subscribe-btn{
+    height: 45px;
+    position: relative;
+    bottom: 0px;
+    background: #FF7676;
+    border: none;
+    border-radius: 0px;
+}
+.sc-nav-searchbar{
+      background: #EFEFEF;
+    border: none;
+    height: 40px;
+    padding-left: 10px;
+    width: 70%;
+}
+.sc-feedback-container{
+  padding-left: 8%;
+}
+.sc-feedback-btn-container{
+  text-align: right;
+  padding-bottom: 5%;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-primary:hover, .btn-primary:focus{
+  background: #FF7676;
 }

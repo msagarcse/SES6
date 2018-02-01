@@ -8,7 +8,7 @@ class FeedBack extends React.Component{
 
     render(){
         return(<section className="container-fluid sc-feedback-inner-grid">
-                <div className="sc-feedback-outer-grid">
+                <div className="sc-feedback-outer-grid container">
                     <div className="row">
                         <div className="col-xs-1"></div>
                         <div className="col-xs-10">
@@ -21,8 +21,7 @@ class FeedBack extends React.Component{
                                 </div>
                                 <div className="col-xs-6 sc-feedback-suggestion sc-feedback-border">
                                     <div className="row">
-                                        <div className="col-xs-1"></div>
-                                        <div className="col-xs-11">
+                                        <div className="col-xs-12 sc-feedback-container">
                                             <div className="sc-feedback-ques">
                                                 <span>Can you give us more elaborated explanations</span><span>User 1</span>
                                             </div>
@@ -38,13 +37,17 @@ class FeedBack extends React.Component{
                                              <div className="sc-feedback-ques">
                                                 <span>Can you give us more elaborated explanations</span><span>User 1</span>
                                             </div>
-                                            <button className="btn btn-primary btn-sm sc-topic-list-btn">View All</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-xs-1"></div>
+                    </div>
+                    <div className="row">
+                        <div className="col-xs-11 sc-feedback-btn-container">
+                            <button className="btn btn-primary btn-sm sc-topic-list-btn">View All</button>
+                        </div>
                     </div>
                 </div>
         </section>)
