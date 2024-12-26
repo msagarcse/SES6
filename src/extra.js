@@ -7,3 +7,13 @@ console.log("not new");
 
 const student ={};
 console.log(student);
+
+
+const std=new Object();
+std.name="deo";
+std.id=564;
+std.course="Btech";
+
+console.log(std.name);
+
+console.log(std.id);
